@@ -1,0 +1,93 @@
+/*--- footer ---*/
+.footer {
+	padding-bottom: 78px;
+	min-width: 1140px;
+
+	&__holder {
+		display: flex;
+	}
+
+	&__logo {
+		margin-bottom: 15px;
+	}
+
+	&__logo-text {
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 36px;
+		margin-left: 3.79px;
+	}
+
+	&__text {
+		width: 300px;
+		margin-bottom: 40px;
+	}
+
+	&__social-img {
+		margin-right: 30px;
+	}
+
+	&__block-right {
+		display: flex;
+		margin-left: auto;
+	}
+
+	&__item-privacy {
+		margin-right: 100px;
+		width: 147px;
+	}
+
+	&__subtitle {
+		font-weight: 700;
+		font-size: 21px;
+		line-height: 32px;
+		letter-spacing: 0.5px;
+		margin-bottom: 18px;
+	}
+
+	&__link p {
+		margin-bottom: 13px;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 27px;
+		letter-spacing: 0.5px;
+		display: inline-block;
+	}
+
+	&__link-down p {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 27px;
+		letter-spacing: 0.5px;
+		display: inline-block;
+	}
+
+	&__item-legal {
+		margin-right: 85px;
+		width: 147px;
+	}
+
+	&__item-contact {
+		width: 147px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.footer {
+		&__holder {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		&__block-right {
+			margin-left: 0;
+		}
+
+		&__block-left {
+			margin-bottom: 80px;
+			text-align: center;
+		}
+	}
+}
+
+/*--- footer ---*/
