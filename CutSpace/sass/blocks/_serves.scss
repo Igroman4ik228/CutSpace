@@ -1,0 +1,226 @@
+/*--- serves ---*/
+.serves {
+	position: relative;
+	margin-bottom: 113px;
+	min-width: 1140px;
+	&::before {
+		content: "";
+		display: block;
+		background: #F5F6FA;
+		height: 704px;
+		width: 100%;
+		position: absolute;
+		top: 20%;
+		bottom: 0;
+		left: 0;
+		z-index: -1;
+	}
+
+	&__using-product {
+		background-image: url("../img/cta/Bg.jpg");
+		max-height: 464px;
+		max-width: 1110px;
+		text-align: right;
+		padding-right: 95px;
+		padding-top: 93px;
+		padding-bottom: 90px;
+		margin-bottom: 144px;
+	}
+
+	&__title-01 {
+		max-width: 342px;
+		margin-left: auto;
+		text-align: start;
+		color: white;
+		margin-bottom: 15px;
+		margin-right: 20px;
+	}
+
+	&__text {
+		max-width: 342px;
+		margin-left: auto;
+		text-align: start;
+		color: white;
+		margin-bottom: 30px;
+		margin-right: 20px;
+	}
+
+	&__button-01 {
+		padding: 18px 40px 16px 41px;
+		margin-right: 20px;
+	}
+
+	&__button-02 {
+		padding: 18px 29px 16px 30px;
+		background-color: white;
+		color: black;
+	}
+
+	&__button-02:hover {
+		background-color: rgb(201, 198, 198);
+	}
+
+	&__button-02 img {
+		margin-top: 6px;
+		margin-right: 7px;
+	}
+
+	&__title-02 {
+		text-align: center;
+		margin-bottom: 10px;
+		
+	}
+
+	&__text-02 {
+		text-align: center;
+		margin-bottom: 45px;
+	}
+
+	&__holder {
+		display: flex;
+	}
+
+	&__buyers {
+		box-shadow: 0px 40px 52px -22px rgba(0, 0, 0, 0.08);
+		border-radius: 10px;
+		height: 365px;
+		width: 540px;
+		padding-top: 40px;
+		padding-bottom: 39px;
+		text-align: center;
+		background-color: #fff;
+		transition: background-color 0.2s ease-in,color 0.2s ease-in;
+	}
+
+	&__buyers:hover {
+		background-color: $accent;
+		color: white;
+	}
+
+	.serves__buyers:hover {
+		
+		.buyers-svg {
+			fill: white;
+		}
+		.serves__button-03 {
+			color: $accent;
+			background-color: #fff;
+		}
+	}
+
+	.buyers-svg {
+		transition: fill 0.2s ease-in
+	}
+
+	&__title-03 {
+		margin-top: 15px;
+		margin-bottom: 1px;
+		
+	}
+
+	&__text-03 {
+		width: 364px;
+		margin-right: auto;
+		margin-left: auto;
+		margin-bottom: 25px;
+	}
+
+	&__button-03 {
+		padding: 18px 39px 16px 39px;
+		background-color: $accent;
+		color: white;
+		transition: background-color 0.2s ease-in,color 0.2s ease-in;
+	}
+	
+	&__button-03:hover {
+		background-color: white;
+	}
+
+	&__seller {
+		background-color: white;
+		box-shadow: 0px 40px 52px -22px rgba(0, 0, 0, 0.08);
+		border-radius: 10px;
+		height: 365px;
+		width: 540px;
+		padding-top: 40px;
+		padding-bottom: 39px;
+		text-align: center;
+		transition: background-color 0.2s ease-in,color 0.2s ease-in;
+	}
+
+	&__seller:hover {
+		background-color: $accent;
+		color: white;
+	}
+
+	.serves__seller:hover {
+		
+		.seller-svg {
+			fill: white;
+		}
+		.serves__button-04 {
+			color: $accent;
+			background-color: #fff;
+		}
+	}
+
+	.seller-svg {
+		transition: fill 0.2s ease-in
+	}
+
+	&__title-04 {
+		margin-top: 15px;
+		margin-bottom: 1px;
+	}
+
+	&__text-04 {
+		width: 364px;
+		margin-right: auto;
+		margin-left: auto;
+		margin-bottom: 25px;
+	}
+
+	&__button-04 {
+		padding: 18px 39px 16px 39px;
+		background-color: $accent;
+		color: white;
+		transition: background-color 0.2s ease-in,color 0.2s ease-in;
+	}
+	
+	&__space{
+		height: 365px;
+		width: 30px;
+	}
+}
+@media (max-width: 1200px){
+	.serves__using-product{
+		background-image: none;
+		padding: 0;
+		text-align: center;
+		height: auto;
+	}
+	.serves__title-01,.serves__text,.serves__title-02,.serves__text-02{
+		margin-right: auto;
+		margin-left: auto;
+		color: #323232;
+		text-align: center;
+		max-width: 700px;
+	}
+	.serves__space{
+		display: none;
+	}
+	.serves__holder{
+		flex-direction: column;
+		align-items: center;
+	}
+	.serves__buyers,.serves__seller{
+		max-width: 90%;
+	}
+	.serves__buyers{
+		margin-bottom: 20px;
+	}
+	.serves::before {
+		top: 25%;
+	}
+}
+/*--- serves ---*/

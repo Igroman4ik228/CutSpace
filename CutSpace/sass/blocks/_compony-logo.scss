@@ -1,0 +1,34 @@
+/*--- compony-logo ---*/
+.compony-logo {
+	min-width: 1140px;
+	margin-bottom: 91px;
+	&__holder{
+		display: flex;
+		text-align: center;
+		justify-content: space-between;
+	}
+}
+@media (max-width: 1200px) {
+	.compony-logo__holder{
+		display: grid;
+		grid-template-columns: 50% 50%;
+		grid-row-gap: 50px;
+	}
+	.compony-logo__holder img{
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+@media (max-width: 770px) {
+	.compony-logo__holder{
+		display: grid;
+		grid-template-columns: 100%;
+		grid-auto-rows: 42px;
+		grid-row-gap: 20px;
+	}
+	.compony-logo__holder img{
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+/*--- compony-logo ---*/
